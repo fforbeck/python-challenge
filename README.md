@@ -1,4 +1,4 @@
-python-chalenge
-===============
+python-challenge :)
+===================
 
 http://www.pythonchallenge.com/
