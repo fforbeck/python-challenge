@@ -1,8 +1,13 @@
+import itertools
+
 file_characters = open("pc_02.txt", "rt")
 characters = file_characters.read()
 file_characters.close()
 
-import re
-matcher = re.compile('[a-z|A-Z|0-9]')
-#considerar menor ocorrencia dos chars
-print(matcher.match(characters))
+secret_word = ""
+for l in characters:
+	count = str.count(characters, l)
+	if count == 1:
+		secret_word += l
+
+print(secret_word)
